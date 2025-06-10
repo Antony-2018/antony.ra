@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catálogo de Jogos Retró</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* Adicionando estilo para o grid */
+        .catalogo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .catalogo {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .catalogo {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>微 Jogos Retró</h1>
+        <p>Uma viagem no tempo com os clássicos dos games!</p>
+    </header>
+    
+    <main class="catalogo">
+        <!-- Primeira linha -->
+        <div class="card">
+            <img src="img/mario games.jpeg" alt="Mario">
+            <h2>mario</h2>
+            <p>Clássico da Nintendo que marcou gerações.</p>
+        </div>
+        
+        <div class="card">
+            <img src="img/s.png" alt="Sonic">
+            <h2>Sonic</h2>
+            <p>O ouriço azul mais veloz da história dos games.</p>
+        </div>
+        
+        <div class="card">
+            <img src="img/pac man.jpeg" alt="Pac-Man">
+            <h2>Pac-Man</h2>
+            <p>Evite os fantasmas e coma todos os pontinhos!</p>
+        </div>
+        
+        <!-- Segunda linha -->
+        <div class="card">
+            <img src="img/61M3rDwh4qL._h1_.png" alt="Tetris">
+            <h2>Tetris</h2>
+            <p>O clássico jogo de blocos que desafia sua estratégia!</p>
+        </div>
+        
+        <div class="card">
+            <img src="img/legend.jpeg" alt="Zelda">
+            <h2>The Legend of Zelda</h2>
+            <p>Aventura épica que definiu um gênero.</p>
+        </div>
+        
+        <div class="card">
+            <img src="img/images.jpeg">
+            <h2>Street Fighter II</h2>
+            <p>O jogo de luta que revolucionou os arcades.</p>
+        </div>
+    </main>
 
+    <footer>
+        <p>Feito com Antony R.A</p>
+    </footer>
+</body>
+</html>
